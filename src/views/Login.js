@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 
-export class onLogin extends Component {
+export class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -131,4 +131,4 @@ export class onLogin extends Component {
   }
 }
 
-export default onLogin;
+export default Login;
