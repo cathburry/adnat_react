@@ -80,6 +80,7 @@ export class Organisations extends Component {
       body: JSON.stringify(data)
     })
       .then(res => {
+        this.setState({modal: false})
         this.props.getData(this.props.sessionId);
       })
       .catch(res => {
