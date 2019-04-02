@@ -7,8 +7,8 @@ import {
   Redirect
 } from "react-router-dom";
 
-import LoginPage from "./views/Login";
-import SignUpPage from "./views/SignUp";
+import Login from "./views/Login";
+import SignUp from "./views/SignUp";
 import Header from "./components/Header";
 import Organisations from "./views/Organisations";
 import Shifts from "./views/Shifts";
@@ -155,7 +155,7 @@ class App extends Component {
             {this.state.showSignUpComponent ? (
               <Switch>
                 <Route path="/signup" render={props => (
-                    <SignUpPage {...props} sessionId={this.state.sessionId} currentSession={this.currentSession} onSignUp={this.onSignUp} />
+                    <SignUp {...props} sessionId={this.state.sessionId} currentSession={this.currentSession} onSignUp={this.onSignUp} />
                   )}
                 />
                 <Redirect to="/signup" />
@@ -165,7 +165,7 @@ class App extends Component {
                 <Route
                   path="/login"
                   render={props => (
-                    <LoginPage
+                    <Login
                       {...props}
                       sessionId={this.state.sessionId}
                       currentSession={this.currentSession}
