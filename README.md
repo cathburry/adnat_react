@@ -1,4 +1,4 @@
-Instructions for the backend: 
+Instructions: 
 
 1. In the project directory, please run these using terminal/commandline:
 
@@ -10,6 +10,7 @@ Instructions for the backend:
 2. Open [http://localhost:3005](http://localhost:3005) to view it in the browser.
 
 3. Go to the "backend" folder
+
 4. Run the following using commandline/terminal
 ## yarn install
 ## yarn run
