@@ -103,7 +103,7 @@ export class onLogin extends Component {
                       </InputGroup>
                       <Row>
                         <Col xs="6">
-                          <Button color="primary" onClick={this.onLogin} className="px-4">onLogin</Button>
+                          <Button color="primary" onClick={this.onLogin} className="px-4">Login</Button>
                         </Col>
                         <Col xs="6" className="text-right">
                           <Button color="link" className="px-0">Forgot password?</Button>
