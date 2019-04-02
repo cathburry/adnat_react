@@ -12,9 +12,8 @@ Instructions:
 3. Go to the "backend" folder
 
 4. Run the following using commandline/terminal
-
-## `yarn add`
-## `yarn run start`
+### `yarn add`
+### `yarn run start`
 
 The frontend will reload if you make edits.<br>
 
