@@ -4,7 +4,7 @@ Instructions:
 
 ### `yarn add`
 ->Install all necessary dependencies
-### `yarn start`
+### `yarn run start`
 ->Runs the app in the development mode.<br>
 
 2. Open [http://localhost:3005](http://localhost:3005) to view it in the browser.
@@ -12,8 +12,9 @@ Instructions:
 3. Go to the "backend" folder
 
 4. Run the following using commandline/terminal
-## yarn install
-## yarn run
+## `yarn add`
+## `yarn run start`
 
 The frontend will reload if you make edits.<br>
+
 # adnat_react
