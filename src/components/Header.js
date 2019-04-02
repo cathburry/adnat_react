@@ -1,5 +1,5 @@
 import React, { Component, Suspense } from "react";
-import { DropdownItem, DropdownMenu, DropdownToggle, Nav, NavbarBrand} from 'reactstrap';
+import { DropdownItem, DropdownMenu, DropdownToggle, Nav} from 'reactstrap';
 import { AppHeaderDropdown, AppHeader } from '@coreui/react';
 
 export class Header extends Component {
