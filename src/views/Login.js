@@ -76,7 +76,7 @@ export class Login extends Component {
                 <Card className="p-4">
                   <CardBody>
                     <Form>
-                      <h1>Adnat</h1>
+                      <h1><b>ADNAT</b></h1>
                       <h2>Login</h2>
                       <p className="text-muted">Sign In to your account</p>
                       <InputGroup className="mb-3">
