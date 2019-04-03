@@ -383,11 +383,11 @@ export class Organisations extends Component {
             <img src="shift.png" className="button-size-shift" alt="View Shifts" color="primary" xl block onClick={this.props.toggleShift}/>
             <h5>View Shifts</h5>
             </Col>
-            <Col xs="12" sm="6" md="4" className="col-color">
+            <Col xs="12" sm="6" md="4" className="col-color button-shift-edit">
             <img src="edit.png" className="button-size-shift" alt="Edit Organisation" color="success" xl block onClick={this.toggleCurrentOrganisation}/>
             <h5>Edit Organisation</h5>
             </Col>
-            <Col xs="12" sm="6" md="4" className="col-color">
+            <Col xs="12" sm="6" md="4" className="col-color button-shift-leave">
             <img src="leave.png" className="button-size-shift" alt="Leave Organisation" color="danger" xl block onClick={this.leaveOrg}/>
             <h5>Leave Organisation</h5>
             </Col>
