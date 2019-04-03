@@ -113,7 +113,7 @@ export class Shifts extends Component {
     return (
       <div>
         <br/><br/><br/><br/>
-        <h2>ADNAT</h2>
+        <h2><b><b>ADNAT</b></b></h2>
       	<h4>Logged in as {this.props.userAttributes.name.toString()}</h4>
         <br/><br/>
         <Card>
