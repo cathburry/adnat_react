@@ -99,7 +99,7 @@ export class Organisations extends Component {
   };
 
   toggleCurrentOrganisation = () => {
-    this.setState({editing: true});
+    this.setState({editing: true, currentOrg: true});
     
     this.setState({
       idEdit: this.props.userAttributes.organisationId,
@@ -134,7 +134,8 @@ export class Organisations extends Component {
       organisationName: data.name,
       hourlyRateEdit: "",
       nameEdit: "",
-      editing: false
+      editing: false,
+      currentOrg: false
     });
   };
 
@@ -175,6 +176,7 @@ export class Organisations extends Component {
       }
     )
       .then(res => {
+        this.setState({currentOrg: false});
         this.props.getData(this.props.sessionId);
       })
       .catch(res => {
@@ -343,7 +345,7 @@ export class Organisations extends Component {
                   Cancel
                 </Button>&nbsp;&nbsp;&nbsp;
                 <Button color="primary" type="submit">Update</Button><br/><br/><br/>
-                <Button color="danger" className="leave-button-width" onClick={this.leaveOrg} type="button">
+                <Button color="danger" display="none" className="leave-button-width" onClick={this.leaveOrg} type="button">
                   Leave
                 </Button>
               </center>
@@ -374,11 +376,20 @@ export class Organisations extends Component {
             </CardHeader>
             <CardBody>
             <center>
-            <Button className="button-size-shift" color="primary" xl block onClick={this.props.toggleShift}>View Shifts</Button>&nbsp;&nbsp;
-            <Button className="button-size-shift" color="success" xl block onClick={this.toggleCurrentOrganisation}>
-              Edit
-            </Button>&nbsp;&nbsp;
-            <Button className="button-size-shift" color="danger" xl block onClick={this.leaveOrg}>Leave</Button>
+            <Row className="row-align">
+            <Col xs="12" sm="6" md="4" className="col-color">
+            <img src="shift.png" className="button-size-shift" alt="View Shifts" color="primary" xl block onClick={this.props.toggleShift}/>
+            <h4>View Shifts</h4>
+            </Col>
+            <Col xs="12" sm="6" md="4" className="col-color">
+            <img src="edit.png" className="button-size-shift" alt="Edit Organisation" color="success" xl block onClick={this.toggleCurrentOrganisation}/>
+            <h4>Edit Organisation</h4>
+            </Col>
+            <Col xs="12" sm="6" md="4" className="col-color">
+            <img src="leave.png" className="button-size-shift" alt="Leave Organisation" color="danger" xl block onClick={this.leaveOrg}/>
+            <h4>Leave Organisation</h4>
+            </Col>
+            </Row>
             </center>
             </CardBody>
             </Card>
