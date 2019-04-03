@@ -240,7 +240,7 @@ export class Organisations extends Component {
         <div className="animated fadeIn">
           <Row>
             <Col xs="12" sm="12" lg="12"  className="padding-top-org">
-              <h2>ADNAT</h2>
+              <h2><b>ADNAT</b></h2>
               <h4>Logged in as {this.props.userAttributes.name.toString()}!</h4>
               <p>You aren't a member of any organizations. Join an exisiting one or create a new one.</p>
             </Col>
@@ -310,7 +310,7 @@ export class Organisations extends Component {
         <div className="animated fadeIn">
         <br />
           <div className="padding-top-org-2">
-        <h2>ADNAT</h2>
+        <h2><b>ADNAT</b></h2>
         <h4>Logged in as {this.props.userAttributes.name.toString()}</h4><br/>
             <Card>
               <CardHeader>
@@ -362,7 +362,7 @@ export class Organisations extends Component {
           <div>
           <br/>
             <Col xs="12" sm="12" lg="12"  className="padding-top-org-2">
-              <h2>ADNAT</h2>
+              <h2><b>ADNAT</b></h2>
               <h4>Logged in as {this.props.userAttributes.name.toString()}</h4>
             </Col>
             <br/><br/>
