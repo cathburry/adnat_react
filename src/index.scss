@@ -12,7 +12,8 @@
 }
 
 .button-size-shift {
-  height: 60px;
+  height: 120px;
+  cursor: pointer;
 }
 
 .leave-button-width {
@@ -21,4 +22,17 @@
 
 .nav-bar-brand {
 	float: left;
+}
+
+.col-color {
+	background-color: #95cce1;
+	border: 1px aliceblue;
+	border-radius: 100px;
+	max-width: 30%;
+	padding: 2% 0 2% 0;
+	margin: 1%;
+}
+
+.row-align {
+	justify-content: center;
 }
