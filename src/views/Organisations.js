@@ -345,9 +345,11 @@ export class Organisations extends Component {
                   Cancel
                 </Button>&nbsp;&nbsp;&nbsp;
                 <Button color="primary" type="submit">Update</Button><br/><br/><br/>
-                <Button color="danger" display="none" className="leave-button-width" onClick={this.leaveOrg} type="button">
+                {this.state.currentOrg ? 
+                <Button color="danger"  className="leave-button-width" onClick={this.leaveOrg} type="button">
                   Leave
                 </Button>
+                  : ""}
               </center>
             </form>
             </CardBody>
@@ -379,15 +381,15 @@ export class Organisations extends Component {
             <Row className="row-align">
             <Col xs="12" sm="6" md="4" className="col-color">
             <img src="shift.png" className="button-size-shift" alt="View Shifts" color="primary" xl block onClick={this.props.toggleShift}/>
-            <h4>View Shifts</h4>
+            <h5>View Shifts</h5>
             </Col>
             <Col xs="12" sm="6" md="4" className="col-color">
             <img src="edit.png" className="button-size-shift" alt="Edit Organisation" color="success" xl block onClick={this.toggleCurrentOrganisation}/>
-            <h4>Edit Organisation</h4>
+            <h5>Edit Organisation</h5>
             </Col>
             <Col xs="12" sm="6" md="4" className="col-color">
             <img src="leave.png" className="button-size-shift" alt="Leave Organisation" color="danger" xl block onClick={this.leaveOrg}/>
-            <h4>Leave Organisation</h4>
+            <h5>Leave Organisation</h5>
             </Col>
             </Row>
             </center>
