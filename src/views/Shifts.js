@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Input } from 'reactstrap';
+import { Button, Card, CardBody, CardHeader, Input } from 'reactstrap';
 
 export class Shifts extends Component {
   constructor(props) {
@@ -116,7 +116,11 @@ export class Shifts extends Component {
         <h2>ADNAT</h2>
       	<h4>Logged in as {this.props.userAttributes.name.toString()}</h4>
         <br/><br/>
+        <Card>
+        <CardHeader>
         <h2>Shifts</h2>
+        </CardHeader>
+        <CardBody>
         <table className="table table-striped" style={{ marginTop: 20 }} >
           <thead>
             <tr>
@@ -187,6 +191,8 @@ export class Shifts extends Component {
         <center>
           <Button color="secondary" onClick={this.props.toggleShift}>Back</Button>
         </center>
+        </CardBody>
+        </Card>
       </div>
     );
   }
