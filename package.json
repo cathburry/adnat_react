@@ -8,7 +8,7 @@
     "@coreui/react": "^2.1.5",
     "concurrently": "^4.1.0",
     "cors": "^2.8.5",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
